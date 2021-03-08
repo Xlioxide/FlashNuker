@@ -33,8 +33,8 @@ password = config.get('pass')
 prefix = config.get('prefix')
 anti_afk = config.get('anti_afk')
 
-width = os.get_terminal_size().columns
- def RandomColor():
+width = os.get_terminal_size().columns  
+def RandomColor():
      if anti_afk == True:
          anti_afk = 'Active'
     else:
