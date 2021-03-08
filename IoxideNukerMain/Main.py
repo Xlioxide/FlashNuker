@@ -37,7 +37,7 @@ width = os.get_terminal_size().columns
 def RandomColor():
      if anti_afk == True:
          anti_afk = 'Active'
-    else:
+     else:
         anti_afk = 'Off'
 
      print(f'''{Fore.RESET}
