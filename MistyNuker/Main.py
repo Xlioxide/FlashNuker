@@ -352,3 +352,20 @@ async def anal(ctx, recipients):
 if __name__ == '__main__':
     Init()
 
+@Ioxide.command()
+async def afk(ctx):
+    await ctx.message.delete()
+    em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
+    em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
+    em.set_image(url="https://media.giphy.com/media/SMVmV1TcnSUj6/giphy.gif")
+    em.set_footer(text="dont fold lmfao")
+    await ctx.send(embed=em)
+
+    @Ioxide.command()
+async def wizzing(ctx):
+    await ctx.message.delete()
+    em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
+    em.add_field(name="_**Destroy**_",value="Fucks a servers channels and roles",inline=False)
+    em.set_image(url="https://media.giphy.com/media/pVwsBrZyxOlfa/giphy.gif")
+    em.set_footer(text="Dont let this happen to u lol")
+    await ctx.send(embed=em)
