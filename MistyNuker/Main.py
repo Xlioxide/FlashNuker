@@ -361,7 +361,7 @@ async def afk(ctx):
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 
-    @Ioxide.command()
+@Ioxide.command()
 async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
