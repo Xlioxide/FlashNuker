@@ -337,3 +337,16 @@ async def anal(ctx, recipients):
 if __name__ == '__main__':
     Init()
 
+Ioxide.command()
+async def help(ctx):
+    await ctx.message.delete()
+    em = discord.Embed(title="_Misty Server Nuker_",color= discord.Color(0x000000))
+    em.add_field(name="_*Banning*_",value="Display Banning Utilities",inline=False)
+    em.add_field(name="_*Kicking*_",value="Display Kicking Utilities",inline=False)
+    em.add_field(name="_*AntiAfk*_",value="Display Anti-Afk Utilities",inline=False)
+    em.add_field(name="_*Wizzing*_",value="Display Wizzing Utilities",inline=False)
+    em.add_field(name="_*Trolling*_",value="Display Trolling Utilities",inline=False)
+    em.add_field(name="_*NSFW*_",value="Display NSFW Utilities",inline=False)
+    em.set_image(url="https://pa1.narvii.com/6771/e22bd8d7c6be5197651ca36d86636beb5a68b7fb_hq.gif")
+    em.set_footer(text="Misty is daddy")
+    await ctx.send(embed=em)
