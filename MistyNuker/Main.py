@@ -287,7 +287,7 @@ async def spank(ctx, recipients):
         em.set_image(url=res['url'])
     await ctx.send(embed=em)
 
-@Ioxide.command()
+@Ioxide.command(aliases['tits'])
 async def boobs(ctx, recipients):
     await ctx.message.delete()
     if isinstance(ctx.message.channel, discord.GroupChannel):
