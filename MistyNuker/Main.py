@@ -40,7 +40,7 @@ def startprint():
      else:
         antiafk = 'Disabled'
 
-    print(f'''{Fore.RESET}
+     print(f'''{Fore.RESET}
                     {Fore.GREEN}███▄ ▄███▓ ██▓  ██████ ▄▄▄█████▓▓██   ██▓
                     {Fore.GREEN}▓██▒▀█▀ ██▒▓██▒▒██    ▒ ▓  ██▒ ▓▒ ▒██  ██▒
                     {Fore.GREEN}▓██    ▓██░▒██▒░ ▓██▄   ▒ ▓██░ ▒░  ▒██ ██░
