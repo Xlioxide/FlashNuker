@@ -1,5 +1,5 @@
 @echo off
 cls
-title Ioxide Nuker
+title Misty Nuker
 python main.py
 pause
