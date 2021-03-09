@@ -177,7 +177,7 @@ async def on_connect():
 @Ioxide.command()
 async def help(ctx):
     await ctx.message.delete()
-    em = discord.Embed(title="_Misty Server Nuker_",color= discord.Color(0x000000))
+    em = discord.Embed(title="_Misty and Klioxide Server Nuker_",color= discord.Color(0x000000))
     em.add_field(name="_*Banning*_",value="Display Banning Utilities",inline=False)
     em.add_field(name="_*Kicking*_",value="Display Kicking Utilities",inline=False)
     em.add_field(name="_*AntiAfk*_",value="Display Anti-Afk Utilities",inline=False)
