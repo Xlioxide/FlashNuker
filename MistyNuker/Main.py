@@ -193,7 +193,7 @@ async def help(ctx):
 async def maker(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_Misty Nuker_",color= discord.Color(0x000000))
-    em.add_field(name="_**SCREAMING MIST IS COMING FOR YOU**_")
+    em.add_field(name="_**SCREAMING MIST IS COMING FOR YOU**_",value="ScreamW",inline=False)
     em.set_image(url="https://68.media.tumblr.com/9b1bd5f501d5c69f7ca767cfe0d91d9c/tumblr_oglorcp12y1r2hy3ro2_500.gif")
     em.set_footer(text="Made By Scream#1631")
     await ctx.send(embed=em)
