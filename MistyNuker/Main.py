@@ -261,11 +261,10 @@ if __name__ == '__main__':
 @Ioxide.command()
 async def fuck(ctx):
     await ctx.message.delete()
-        r 
-        = requests.get("https://nekos.life/api/v2/img/Random_hentai_gif")
-        res = r.json()
-        em = discord.Embed(description=Ioxide.user.name+' _**fucked**_ '+recipients, color= discord.Color(0x000000))
-        em.set_image(url=res['url'])
+    r = requests.get("https://nekos.life/api/v2/img/Random_hentai_gif")
+    res = r.json()
+    em = discord.Embed(description=Ioxide.user.name+' _**fucked**_ '+recipients, color= discord.Color(0x000000))
+    em.set_image(url=res['url'])
 
     elif isinstance(ctx.message.channel, discord.DMChannel): # makes it work in dms
             r = requests.get("https://nekos.life/api/v2/img/Random_hentai_gif")
