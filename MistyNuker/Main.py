@@ -187,6 +187,15 @@ async def help(ctx):
     em.set_image(url="https://pa1.narvii.com/6771/e22bd8d7c6be5197651ca36d86636beb5a68b7fb_hq.gif")
     em.set_footer(text="Misty is daddy")
     await ctx.send(embed=em)
+   
+@Ioxide.command()
+async def wizzing(ctx):
+    await ctx.message.delete()
+    em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
+    em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
+    em.set_image(url="https://www.hackread.com/wp-content/uploads/2016/02/giphy-hacking.gif")
+    em.set_footer(text="Dont let this happen to u lol")
+    await ctx.send(embed=em)
     
 @Ioxide.command()
 async def blood(ctx):
@@ -250,10 +259,10 @@ if __name__ == '__main__':
     Init()
 
 @Ioxide.command()
-async def fuck(ctx, recipients):
-    await ctx.message.delete() 
-    if isinstance(ctx.message.channel, discord.GroupChannel): # makes it work in gcs (finally got it i was so retarded LOL)
-        r = requests.get("https://nekos.life/api/v2/img/Random_hentai_gif")
+async def fuck(ctx):
+    await ctx.message.delete()
+        r 
+        = requests.get("https://nekos.life/api/v2/img/Random_hentai_gif")
         res = r.json()
         em = discord.Embed(description=Ioxide.user.name+' _**fucked**_ '+recipients, color= discord.Color(0x000000))
         em.set_image(url=res['url'])
@@ -385,11 +394,3 @@ async def afk(ctx):
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 
-@Ioxide.command()
-async def wizzing(ctx):
-    await ctx.message.delete()
-    em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
-    em.add_field(name="_**Destroy**_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://media.giphy.com/media/pVwsBrZyxOlfa/giphy.gif")
-    em.set_footer(text="Dont let this happen to u lol")
-    await ctx.send(embed=em)
