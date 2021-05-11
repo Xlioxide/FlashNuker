@@ -188,6 +188,13 @@ async def help(ctx):
     em.set_footer(text="Misty is daddy")
     await ctx.send(embed=em)
     
+    @Ioxide.command()
+async def blood(ctx):
+    await ctx.message.delete()
+    em = discord.Embed(title="_GET YOUR LIFE BACK IN BLOOD_",color= discord.Color(0x000000))
+    em.set_image(url="https://th.bing.com/th/id/OIP.l8KagrBbp_Z9ZOU-kJ8GXQHaDF?pid=ImgDet&rs=1")
+    await ctx.send(embed=em)
+    
     
 @Ioxide.command()
 async def maker(ctx):
