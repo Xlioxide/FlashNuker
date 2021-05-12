@@ -279,7 +279,7 @@ async def afk(ctx):
 @Ioxide.command()
 async def check(ctx):
     await ctx.message.delete()
-     await ctx.send('afk check')
+    await ctx.send('afk check')
     time.sleep(0.8)
     await ctx.send('10')
     time.sleep(0.8)
