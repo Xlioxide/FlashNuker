@@ -195,7 +195,14 @@ async def afk(ctx):
     em.set_image(url="https://media.giphy.com/media/SMVmV1TcnSUj6/giphy.gif")
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
-
+@Ioxide.command(aliases=['sayajoke','jokepack'])
+async def joke(ctx):
+    ## idfk how to do tables for the jokes or this would be cleaner
+    jokes = ["Nigga you overdosed from adrenaline rushes nigga fuck is you sayin","Aye nigga the first time you rode a skateboard you started twisting yo spine back and forth thinking you was accelerating nigga you dumb as shit","That wasn't funny nigga that's why yo long lost pet jaguar was found in west virginia eating rat soup in a pawn shop nigga you ugly as shit","That's why all yo subscribers unsubbed from yo youtube channel the first time you did a face-cam because you was ugly as shit","you smell like shit boy you shower with orange juice smelly ass nigga","you have sex with indian cockaroaches goofy ass nigga","your tities built like doritos nasty ass nigga Mmmm doritos nacho titty ass nigga","When you sneeze you got no recoil boy you be sendin yo spit everywhere"]
+    await ctx.message.delete()
+    randomJoke = random.choice(jokes)
+    msg = randomJoke
+    await ctx.send(msg)
    
 @Ioxide.command()
 async def wizzing(ctx):
@@ -205,7 +212,33 @@ async def wizzing(ctx):
     em.set_image(url="https://www.hackread.com/wp-content/uploads/2016/02/giphy-hacking.gif")
     em.set_footer(text="Dont let this happen to u lol")
     await ctx.send(embed=em)
-    
+ @Ioxide.command()
+async def check(ctx):
+    await ctx.message.delete()
+    await ctx.send('afk check')
+    time.sleep(0.8)
+    await ctx.send('10')
+    time.sleep(0.8)
+    await ctx.send('9')
+    time.sleep(0.8)
+    await ctx.send('8')
+    time.sleep(0.8)
+    await ctx.send('7')
+    time.sleep(0.8)
+    await ctx.send('6')
+    time.sleep(0.8)
+    await ctx.send('5')
+    time.sleep(0.8)
+    await ctx.send('4')
+    time.sleep(0.8)
+    await ctx.send('3')
+    time.sleep(0.8)
+    await ctx.send('2')
+    time.sleep(0.8)
+    await ctx.send('1')
+    time.sleep(0.8)
+    await ctx.send('0')
+       
 @Ioxide.command()
 async def blood(ctx):
     await ctx.message.delete()
@@ -267,47 +300,4 @@ async def Fog(ctx):
 if __name__ == '__main__':
     Init()
 
-@Ioxide.command()
-async def afk(ctx):
-    await ctx.message.delete()
-    em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
-    em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
-    em.set_image(url="https://media.giphy.com/media/SMVmV1TcnSUj6/giphy.gif")
-    em.set_footer(text="dont fold lmfao")
-    await ctx.send(embed=em)
-    
-@Ioxide.command()
-async def check(ctx):
-    await ctx.message.delete()
-    await ctx.send('afk check')
-    time.sleep(0.8)
-    await ctx.send('10')
-    time.sleep(0.8)
-    await ctx.send('9')
-    time.sleep(0.8)
-    await ctx.send('8')
-    time.sleep(0.8)
-    await ctx.send('7')
-    time.sleep(0.8)
-    await ctx.send('6')
-    time.sleep(0.8)
-    await ctx.send('5')
-    time.sleep(0.8)
-    await ctx.send('4')
-    time.sleep(0.8)
-    await ctx.send('3')
-    time.sleep(0.8)
-    await ctx.send('2')
-    time.sleep(0.8)
-    await ctx.send('1')
-    time.sleep(0.8)
-    await ctx.send('0')
-    
-@Ioxide.command(aliases=['sayajoke','jokepack'])
-async def joke(ctx):
-    ## idfk how to do tables for the jokes or this would be cleaner
-    jokes = ["Nigga you overdosed from adrenaline rushes nigga fuck is you sayin","Aye nigga the first time you rode a skateboard you started twisting yo spine back and forth thinking you was accelerating nigga you dumb as shit","That wasn't funny nigga that's why yo long lost pet jaguar was found in west virginia eating rat soup in a pawn shop nigga you ugly as shit","That's why all yo subscribers unsubbed from yo youtube channel the first time you did a face-cam because you was ugly as shit","you smell like shit boy you shower with orange juice smelly ass nigga","you have sex with indian cockaroaches goofy ass nigga","your tities built like doritos nasty ass nigga Mmmm doritos nacho titty ass nigga","When you sneeze you got no recoil boy you be sendin yo spit everywhere"]
-    await ctx.message.delete()
-    randomJoke = random.choice(jokes)
-    msg = randomJoke
-    await ctx.send(msg)
+
