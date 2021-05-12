@@ -292,7 +292,97 @@ async def maker(ctx):
     em.set_image(url="https://68.media.tumblr.com/9b1bd5f501d5c69f7ca767cfe0d91d9c/tumblr_oglorcp12y1r2hy3ro2_500.gif")
     em.set_footer(text="Made By Scream#1631")
     await ctx.send(embed=em)
+@Ioxide.command()
+async def cum(ctx, recipients):
+    await ctx.message.delete() 
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/cum")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**came inside**_ '+recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
 
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/cum")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**came inside**_ '+recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em) 
+
+@Ioxide.command()
+async def head(ctx, recipients):
+    await ctx.message.delete()
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/blowjob")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**got head from**_ '+ recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/blowjob")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**got head from**_ '+ recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em)
+
+@Ioxide.command()
+async def spank(ctx, recipients):
+    await ctx.message.delete()
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/spank")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**spanked**_ '+ recipients+"'s _**fat ass**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/spank")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**spanked**_ '+ recipients+"'s _**fat ass**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em)
+
+@Ioxide.command()
+async def boobs(ctx, recipients):
+    await ctx.message.delete()
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/boobs")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**played with**_ '+ recipients +"'s _**boobs**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/boobs")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**played with**_ '+ recipients +"'s _**boobs**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em)
+
+@Ioxide.command()
+async def pussy(ctx, recipients):
+    await ctx.message.delete()
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/pussy")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**fucked**_ '+ recipients +"'s _**wet pussy**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/pussy")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**fucked**_ '+ recipients +"'s _**wet pussy**_ ", color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em)
+
+@Ioxide.command()
+async def kiss(ctx, recipients):
+    await ctx.message.delete() 
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        r = requests.get("https://nekos.life/api/v2/img/kiss")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**kissed**_ '+recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        r = requests.get("https://nekos.life/api/v2/img/kiss")
+        res = r.json()
+        em = discord.Embed(description=Ioxide.user.name+' _**kissed**_ '+recipients, color= discord.Color(0x000000))
+        em.set_image(url=res['url'])
+    await ctx.send(embed=em) 
 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
 async def Fog(ctx):
