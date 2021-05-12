@@ -212,7 +212,7 @@ async def wizzing(ctx):
     em.set_image(url="https://www.hackread.com/wp-content/uploads/2016/02/giphy-hacking.gif")
     em.set_footer(text="Dont let this happen to u lol")
     await ctx.send(embed=em)
- @Ioxide.command()
+@Ioxide.command()
 async def check(ctx):
     await ctx.message.delete()
     await ctx.send('afk check')
