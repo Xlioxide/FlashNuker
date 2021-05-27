@@ -1,5 +1,5 @@
 class ServerNuker():
-    __version__ = 1
+    __version__ = 3
 
 import discord, subprocess, sys, time, os, colorama, base64, codecs, datetime, io, random, numpy, datetime, smtplib, string, ctypes, pokepy
 import urllib.parse, urllib.request, re, json, requests, webbrowser, aiohttp, dns.name, asyncio, functools, logging
@@ -41,22 +41,19 @@ def startprint():
         antiafk = 'Disabled'
 
      print(f'''{Fore.RESET}
-                    {Fore.GREEN}███▄ ▄███▓ ██▓  ██████ ▄▄▄█████▓▓██   ██▓
-                    {Fore.GREEN}▓██▒▀█▀ ██▒▓██▒▒██    ▒ ▓  ██▒ ▓▒ ▒██  ██▒
-                    {Fore.GREEN}▓██    ▓██░▒██▒░ ▓██▄   ▒ ▓██░ ▒░  ▒██ ██░
-                    {Fore.GREEN}▒██    ▒██ ░██░  ▒   ██▒░ ▓██▓ ░   ░ ▐██▓░
-                    {Fore.GREEN}▒██▒   ░██▒░██░▒██████▒▒  ▒██▒ ░   ░ ██▒▓░
-                    {Fore.GREEN}░ ▒░   ░  ░░▓  ▒ ▒▓▒ ▒ ░  ▒ ░░      ██▒▒▒ 
-                    {Fore.GREEN}░  ░      ░ ▒ ░░ ░▒  ░ ░    ░     ▓██ ░▒░ 
-                    {Fore.GREEN}░      ░    ▒ ░░  ░  ░    ░       ▒ ▒ ░░  
-                    {Fore.GREEN}░    ░        ░            ░ ░     
-                    {Fore.GREEN}░ ░      
+                     {Fore.RED} oooooooooooo ooooo              .o.        .oooooo..o ooooo   ooooo
+                     {Fore.RED}`888'     `8 `888'             .888.      d8P'    `Y8 `888'   `888'
+                     {Fore.RED} 888          888             .8"888.     Y88bo.       888     888 
+                     {Fore.RED} 888oooo8     888            .8' `888.     `"Y8888o.   888ooooo888 
+                     {Fore.RED} 888    "     888           .88ooo8888.        `"Y88b  888     888 
+                     {Fore.RED} 888          888       o  .8'     `888.  oo     .d8P  888     888 
+                     {Fore.RED}o888o        o888ooooood8 o88o     o8888o 8""88888P'  o888o   o888o
                     
                                     
-                        {Fore.GREEN}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
-                        {Fore.GREEN}ID ==> {Fore.WHITE}{Ioxide.user.id}
-                        {Fore.GREEN}Anti-AFK ==> {Fore.WHITE}{antiafk}
-                        {Fore.GREEN}Version ==> {Fore.WHITE} v{ServerNuker.__version__}
+                        {Fore.RED}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
+                        {Fore.RED}ID ==> {Fore.WHITE}{Ioxide.user.id}
+                        {Fore.RED}Anti-AFK ==> {Fore.WHITE}{antiafk}
+                        {Fore.RED}Version ==> {Fore.WHITE} v{ServerNuker.__version__}
                     '''+Fore.RESET)
 
 
@@ -92,7 +89,7 @@ class Login(discord.Client):
 colorama.init()
 Ioxide = discord.Client()
 Ioxide = commands.Bot(
-    description='Ioxide Nuker',
+    description='Flash Bot',
     command_prefix=prefix,
     self_bot=True
 )
@@ -177,15 +174,15 @@ async def on_connect():
 @Ioxide.command()
 async def help(ctx):
     await ctx.message.delete()
-    em = discord.Embed(title="_Misty and Klioxide Server Nuker_",color= discord.Color(0x000000))
+    em = discord.Embed(title="_SPEED FORCE_",color= discord.Color(0x000000))
     em.add_field(name="_*Banning*_",value="Display Banning Utilities",inline=False)
     em.add_field(name="_*Kicking*_",value="Display Kicking Utilities",inline=False)
     em.add_field(name="_*AntiAfk*_",value="Display Anti-Afk Utilities",inline=False)
     em.add_field(name="_*Wizzing*_",value="Display Wizzing Utilities",inline=False)
     em.add_field(name="_*Trolling*_",value="Display Trolling Utilities",inline=False)
     em.add_field(name="_*NSFW*_",value="Display NSFW Utilities",inline=False)
-    em.set_image(url="https://pa1.narvii.com/6771/e22bd8d7c6be5197651ca36d86636beb5a68b7fb_hq.gif")
-    em.set_footer(text="Misty is daddy")
+    em.set_image(url="https://img.cinemablend.com/filter:scale/quill/7/3/e/0/2/1/73e02188bbbbba80766ddb331a8b46165237e475.gif?mw=600")
+    em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
 @Ioxide.command()
 async def fuck(ctx, recipients):
@@ -222,7 +219,7 @@ async def afk(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
     em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
-    em.set_image(url="https://media.giphy.com/media/SMVmV1TcnSUj6/giphy.gif")
+    em.set_image(url="https://static.comicvine.com/uploads/original/11133/111330189/6981553-th.gif")
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 @Ioxide.command(aliases=['sayajoke','jokepack'])
@@ -239,41 +236,41 @@ async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
     em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://www.hackread.com/wp-content/uploads/2016/02/giphy-hacking.gif")
+    em.set_image(url="https://th.bing.com/th/id/R015f4b3aa57060be8ab3fe8ac77053c8?rik=%2fzj74nPB8yoSww&pid=ImgRaw")
     em.set_footer(text="Dont let this happen to u lol")
     await ctx.send(embed=em)
 @Ioxide.command()
 async def check(ctx):
     await ctx.message.delete()
     await ctx.send('afk check')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('10')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('9')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('8')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('7')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('6')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('5')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('4')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('3')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('2')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('1')
-    time.sleep(0.8)
+    time.sleep(0.4)
     await ctx.send('0')
        
 @Ioxide.command()
 async def blood(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GET YOUR LIFE BACK IN BLOOD_",color= discord.Color(0x000000))
-    em.set_image(url="https://th.bing.com/th/id/OIP.l8KagrBbp_Z9ZOU-kJ8GXQHaDF?pid=ImgDet&rs=1")
+    em.set_image(url="https://media1.tenor.com/images/e51a753d53c7068add1e99a6ef92031c/tenor.gif?itemid=6184096")
     await ctx.send(embed=em)
     
 @Ioxide.command()
@@ -290,7 +287,7 @@ async def maker(ctx):
     em = discord.Embed(title="_Misty Nuker_",color= discord.Color(0x000000))
     em.add_field(name="_**SCREAMING MIST IS COMING FOR YOU**_",value="ScreamW",inline=False)
     em.set_image(url="https://68.media.tumblr.com/9b1bd5f501d5c69f7ca767cfe0d91d9c/tumblr_oglorcp12y1r2hy3ro2_500.gif")
-    em.set_footer(text="Made By Scream#1631")
+    em.set_footer(text="Made By The Speedsters")
     await ctx.send(embed=em)
 @Ioxide.command()
 async def cum(ctx, recipients):
@@ -415,7 +412,7 @@ async def Fog(ctx):
     for _i in range(250):
         await ctx.guild.create_text_channel(name="Mist Slapped u XD")
     for _i in range(250):
-        await ctx.guild.create_role(name="MistW", color=RandomColor())
+        await ctx.guild.create_role(name="MistW", color=0x000000())
 
 if __name__ == '__main__':
     Init()
