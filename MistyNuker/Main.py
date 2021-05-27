@@ -175,12 +175,12 @@ async def on_connect():
 async def help(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_SPEED FORCE_",color= discord.Color(0x000000))
-    em.add_field(name="_*Banning*_",value="Display Banning Utilities",inline=False)
-    em.add_field(name="_*Kicking*_",value="Display Kicking Utilities",inline=False)
-    em.add_field(name="_*AntiAfk*_",value="Display Anti-Afk Utilities",inline=False)
-    em.add_field(name="_*Wizzing*_",value="Display Wizzing Utilities",inline=False)
-    em.add_field(name="_*Trolling*_",value="Display Trolling Utilities",inline=False)
-    em.add_field(name="_*NSFW*_",value="Display NSFW Utilities",inline=False)
+    em.add_field(name="_*Banning*_",value="Zoom",inline=False)
+    em.add_field(name="_*Kicking*_",value="Savitar",inline=False)
+    em.add_field(name="_*AntiAfk*_",value="Reverse Flash",inline=False)
+    em.add_field(name="_*Wizzing*_",value="Trajectory",inline=False)
+    em.add_field(name="_*Trolling*_",value="Impulse",inline=False)
+    em.add_field(name="_*NSFW*_",value="Kid Flash",inline=False)
     em.set_image(url="https://img.cinemablend.com/filter:scale/quill/7/3/e/0/2/1/73e02188bbbbba80766ddb331a8b46165237e475.gif?mw=600")
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
@@ -284,9 +284,9 @@ async def smoke(ctx):
 @Ioxide.command()
 async def maker(ctx):
     await ctx.message.delete()
-    em = discord.Embed(title="_Misty Nuker_",color= discord.Color(0x000000))
-    em.add_field(name="_**SCREAMING MIST IS COMING FOR YOU**_",value="ScreamW",inline=False)
-    em.set_image(url="https://68.media.tumblr.com/9b1bd5f501d5c69f7ca767cfe0d91d9c/tumblr_oglorcp12y1r2hy3ro2_500.gif")
+    em = discord.Embed(title="_GodSpeed_",color= discord.Color(0x000000))
+    em.add_field(name="_**Flash Owns You**_",value="ScreamW",inline=False)
+    em.set_image(url="https://78.media.tumblr.com/91b0bb5140c2641996febba9e9a32033/tumblr_p5k3vxUFrz1uwyauro1_r1_540.gif")
     em.set_footer(text="Made By The Speedsters")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -401,18 +401,18 @@ async def Fog(ctx):
             pass
     try:
         await ctx.guild.edit(
-            name="Misty Got Youu",
-            description="get fucked by Misty LOL",
-            reason="cuz MistyW nigga",
-            icon=None,
+            name="Flash Trapped You",
+            description="We are your gods",
+            reason="LOL",
+            icon="https://th.bing.com/th/id/OIP.ULbnwNzqvezGvcQXDUeLJAHaEK?pid=ImgDet&rs=1",
             banner=None
         )
     except:
         pass
     for _i in range(250):
-        await ctx.guild.create_text_channel(name="Mist Slapped u XD")
+        await ctx.guild.create_text_channel(name="Flash Owns You")
     for _i in range(250):
-        await ctx.guild.create_role(name="MistW", color=0x000000())
+        await ctx.guild.create_role(name="MistW", color=(0x000000))
 
 if __name__ == '__main__':
     Init()
