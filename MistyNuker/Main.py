@@ -1,5 +1,5 @@
 class ServerNuker():
-    __version__ = 3
+    __version__ = 3.5
 
 import discord, subprocess, sys, time, os, colorama, base64, codecs, datetime, io, random, numpy, datetime, smtplib, string, ctypes, pokepy
 import urllib.parse, urllib.request, re, json, requests, webbrowser, aiohttp, dns.name, asyncio, functools, logging
@@ -23,7 +23,7 @@ from gtts import gTTS
 from randomuser import RandomUser
 from pythonping import ping as pyping
 
-ctypes.windll.kernel32.SetConsoleTitleW(f'[Ioxide Server Nuker v{ServerNuker.__version__}] | Loading in...')
+ctypes.windll.kernel32.SetConsoleTitleW(f'[Flash Server Wizz Tool v{ServerNuker.__version__}] | Loading in...')
 
 with open('config.json') as f:
     config = json.load(f)
@@ -69,7 +69,7 @@ def Init():
         token = config.get('token')
         try:
             Ioxide.run(token, bot=False, reconnect=True)
-            os.system(f'title [ Ioxide Nuker ] - Version {ServerNuker.__version__}')
+            os.system(f'title [ Flash Nuker ] - Version {ServerNuker.__version__}')
         except discord.errors.LoginFailure:
             print(f"{Fore.WHITE}[ERROR] {Fore.YELLOW}Sure this is a token? lol"+Fore.RESET)
             os.system('pause >NUL')
@@ -169,7 +169,7 @@ async def on_connect():
         antiafk = "Disabled"
 
     startprint()
-    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Misty Nuker v{ServerNuker.__version__} ] | Logged in as {Ioxide.user.name}')
+    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Flash Nuker Tool v{ServerNuker.__version__} ] | Logged in as {Ioxide.user.name}')
 
 @Ioxide.command()
 async def help(ctx):
