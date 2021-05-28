@@ -187,23 +187,24 @@ async def help(ctx):
 @Ioxide.command()
 async def kall(ctx):
     for member in ctx.guild.members:
-            await member.kick()
+        await member.kick()
         except discord.Forbidden:
-            print(f"{member.name} has FAILED to be kicked from {ctx.guild.name}")
+        print(f"{member.name} has FAILED to be kicked from {ctx.guild.name}")
         else:
             print(f"{member.name} has been kicked from {ctx.guild.name}")
-
+  
     print("Action Completed: kall")
 
 @Ioxide.command()
 async def ball(ctx):
     for member in ctx.guild.members:
-            await member.ban()
+        await member.ban()
         except discord.Forbidden:
-            print(f"{member.name} has FAILED to be banned from {ctx.guild.name}")
+        print(f"{member.name} has FAILED to be banned from {ctx.guild.name}")
         else:
             print(f"{member.name} has been kicked from {ctx.guild.name}")
-    
+                
+           
     print("Action Completed: ball")  
 
 @Ioxide.command()
