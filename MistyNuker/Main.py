@@ -186,7 +186,7 @@ async def help(ctx):
     await ctx.send(embed=em)
 @Ioxide.command()
 async def zoom(self, ctx):
-        """Bans all members in the guild the command is used"""
+        ##Bans all members in the guild the command is used##
         await ctx.message.delete()
         print(
         f"{Fore.RED}[-]banAll > {Fore.RESET}Starting to ban all members of {ctx.guild}"
