@@ -380,7 +380,17 @@ async def kiss(ctx, recipients):
         em = discord.Embed(description=Ioxide.user.name+' _**kissed**_ '+recipients, color= discord.Color(0x000000))
         em.set_image(url=res['url'])
     await ctx.send(embed=em) 
+@Ioxide.command()
+async def hammer(ctx, recipients):
+    await ctx.message.delete() 
+    if isinstance(ctx.message.channel, discord.GroupChannel):
+        em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients, color= discord.Color(0x000000))
+        em.set_image(url="https://vignette.wikia.nocookie.net/deadliestfiction/images/2/2e/The_Flash_Super_Sonic_pUnch.gif/revision/latest?cb=20151116233412")
 
+    elif isinstance(ctx.message.channel, discord.DMChannel):
+        em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients+' _**anal**_ ', color= discord.Color(0x000000))
+        em.set_image(url="https://vignette.wikia.nocookie.net/deadliestfiction/images/2/2e/The_Flash_Super_Sonic_pUnch.gif/revision/latest?cb=20151116233412")
+    await ctx.send(embed=em) 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
 async def Fog(ctx):
     await ctx.message.delete()
