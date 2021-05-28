@@ -384,12 +384,12 @@ async def kiss(ctx, recipients):
 async def hammer(ctx, recipients):
     await ctx.message.delete() 
     if isinstance(ctx.message.channel, discord.GroupChannel):
-        em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients, color= discord.Color(0x000000))
-        em.set_image(url="https://vignette.wikia.nocookie.net/deadliestfiction/images/2/2e/The_Flash_Super_Sonic_pUnch.gif/revision/latest?cb=20151116233412")
+        em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients+' _**a death punch**_', color= discord.Color(0x000000))
+        em.set_image(url="https://78.media.tumblr.com/37dadedf277dd7c06d802130225cf5fb/tumblr_inline_o3346rGusF1r8a94o_500.gif")
 
     elif isinstance(ctx.message.channel, discord.DMChannel):
-        em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients+' _**anal**_ ', color= discord.Color(0x000000))
-        em.set_image(url="https://vignette.wikia.nocookie.net/deadliestfiction/images/2/2e/The_Flash_Super_Sonic_pUnch.gif/revision/latest?cb=20151116233412")
+        em = discord.Embed(description=Ioxide.user.name+' _**punched**_ '+recipients+' _**lights out**_ ', color= discord.Color(0x000000))
+        em.set_image(url="https://78.media.tumblr.com/37dadedf277dd7c06d802130225cf5fb/tumblr_inline_o3346rGusF1r8a94o_500.gif")
     await ctx.send(embed=em) 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
 async def Fog(ctx):
