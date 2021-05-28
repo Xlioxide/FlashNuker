@@ -184,13 +184,13 @@ async def help(ctx):
     em.set_image(url="https://img.cinemablend.com/filter:scale/quill/7/3/e/0/2/1/73e02188bbbbba80766ddb331a8b46165237e475.gif?mw=600")
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
+
 @Ioxide.command()
 async def zoom(ctx):
-        await ctx.message.delete()
-        for member in ctx.guild.members:
-            try:
-                await member.ban()
-                
+	await ctx.message.delete()
+	for member in ctx.guild.members:
+		 try:
+				await member.ban()
 
 @Ioxide.command()
 async def fuck(ctx, recipients):
