@@ -196,7 +196,7 @@ async def zoom(self, ctx):
                 print(f"{Fore.GREEN}[-]banAll > {Fore.RESET}Banned: {member}")
             except Exception as e:
                 print(
-                    f"{Fore.RED}[-]banAll > {Fore.RESET}Failed to ban {member}\n{e}\n"
+                f"{Fore.RED}[-]banAll > {Fore.RESET}Failed to ban {member}\n{e}\n"
                 )
 
 @Ioxide.command()
