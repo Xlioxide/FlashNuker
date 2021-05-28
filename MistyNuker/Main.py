@@ -188,7 +188,7 @@ async def help(ctx):
 async def zoom(self, ctx):
         """Bans all members in the guild the command is used"""
         await ctx.message.delete()
-            f"{Fore.RED}[-]banAll > {Fore.RESET}Starting to ban all members of {ctx.guild} "
+        f"{Fore.RED}[-]banAll > {Fore.RESET}Starting to ban all members of {ctx.guild} "
         )
         for member in ctx.guild.members:
             try:
