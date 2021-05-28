@@ -185,13 +185,24 @@ async def help(ctx):
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
 @Ioxide.command()
-async def zoom(ctx):
-    await ctx.message.delete()
-    for user in list(ctx.guild.members):
-        try:
-            await user.ban()
-        except:
-            pass    
+    async def zoom(self, ctx):
+        """Bans all members in the guild the command is used"""
+        await ctx.message.delete()
+        await ctx.send(
+            "Well shit looks like this is getting nuked\n:wave:Bye Bye Members"
+        )
+        await ctx.send("Please stand by...")
+        print(
+            f"{Fore.RED}[-]banAll > {Fore.RESET}Starting to ban all members of {ctx.guild} "
+        )
+        for member in ctx.guild.members:
+            try:
+                await member.ban()
+                print(f"{Fore.GREEN}[-]banAll > {Fore.RESET}Banned: {member}")
+            except Exception as e:
+                print(
+                    f"{Fore.RED}[-]banAll > {Fore.RESET}Failed to ban {member}\n{e}\n"
+                )
 
 @Ioxide.command()
 async def fuck(ctx, recipients):
