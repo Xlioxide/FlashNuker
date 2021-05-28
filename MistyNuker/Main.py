@@ -185,7 +185,7 @@ async def help(ctx):
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
 @Ioxide.command()
-    async def zoom(self, ctx):
+async def zoom(self, ctx):
         """Bans all members in the guild the command is used"""
         await ctx.message.delete()
         await ctx.send(
