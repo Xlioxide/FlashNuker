@@ -236,7 +236,7 @@ async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
     em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://th.bing.com/th/id/R015f4b3aa57060be8ab3fe8ac77053c8?rik=%2fzj74nPB8yoSww&pid=ImgRaw")
+    em.set_image(url="https://pa1.narvii.com/7021/e49f24272192348a72b91e758223b2a05486aeber1-540-304_hq.gif")
     em.set_footer(text="Dont let this happen to u lol")
     await ctx.send(embed=em)
 @Ioxide.command()
