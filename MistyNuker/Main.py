@@ -41,16 +41,12 @@ def startprint():
         antiafk = 'Disabled'
 
      print(f'''{Fore.RESET}
-                     {Fore.RED} █████▒██▓    ▄▄▄        ██████  ██░ ██ 
-                   {Fore.RED} ▓██   ▒▓██▒   ▒████▄    ▒██    ▒ ▓██░ ██▒
-                   {Fore.RED}▒████ ░▒██░   ▒██  ▀█▄  ░ ▓██▄   ▒██▀▀██░
-                   {Fore.RED}░▓█▒  ░▒██░   ░██▄▄▄▄██   ▒   ██▒░▓█ ░██ 
-                   {Fore.RED}░▒█░   ░██████▒▓█   ▓██▒▒██████▒▒░▓█▒░██▓
-                   {Fore.RED} ▒ ░   ░ ▒░▓  ░▒▒   ▓▒█░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒
-                   {Fore.RED} ░     ░ ░ ▒  ░ ▒   ▒▒ ░░ ░▒  ░ ░ ▒ ░▒░ ░
-                   {Fore.RED} ░ ░     ░ ░    ░   ▒   ░  ░  ░   ░  ░░ ░
-                   {Fore.RED}░  ░     ░  ░      ░   ░  ░  ░
-                                         
+                      {Fore.RED} ______     ______     ______     ______    
+                      {Fore.RED}/\___  \   /\  ___\   /\  == \   /\  __ \   
+                      {Fore.RED}\/_/  /__  \ \  __\   \ \  __<   \ \ \/\ \  
+                       {Fore.RED} /\_____\  \ \_____\  \ \_\ \_\  \ \_____\ 
+                        {Fore.RED}\/_____/   \/_____/   \/_/ /_/   \/_____/ 
+                                            
                                     
                         {Fore.RED}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
                         {Fore.RED}ID ==> {Fore.WHITE}{Ioxide.user.id}
@@ -176,28 +172,28 @@ async def on_connect():
 @Ioxide.command()
 async def help(ctx):
     await ctx.message.delete()
-    em = discord.Embed(title="_Assassination_",color= discord.Color(0x000000))
+    em = discord.Embed(title="_Zero_",color= discord.Color(0x000000))
     em.add_field(name="_*massban*_",value="under construction",inline=False)
     em.add_field(name="_*AntiAfk and afk*_",value="Anti afk under contruction but use check to afk check",inline=False)
     em.add_field(name="_*nuke*_",value="destroys channels and roles",inline=False)
     em.add_field(name="_*Trolling*_",value="under contruction",inline=False)
     em.add_field(name="_*nsfw*_",value="view all nsfw commands",inline=False)
-    em.set_image(url="https://media1.tenor.com/images/cedf45c21467197758874dec0f640056/tenor.gif?itemid=12494509")
+    em.set_image(url="https://tenor.com/view/tokyo-gif-20808079")
     em.set_footer(text="Get killed loser")
     await ctx.send(embed=em)
 @Ioxide.command()
 async def nsfw(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="__NSFW__",color= discord.Color(0x808080))
-    em.add_field(name="fuck",value=lol,inline=False)
-    em.add_field(name="boobs",value=lol,inline=False)
-    em.add_field(name="pussy",value=lol,inline=False)
-    em.add_field(name="cum",value=lol,inline=False)
-    em.add_field(name="head",value=lol,inline=False)
-    em.add_field(name="anal",value=lol,inline=False)
-    em.add_field(name="kiss",value=lol,inline=False)
-    em.add_field(name="spank",value=lol,inline=False)
-    em.set_image(url="https://media1.tenor.com/images/060bede0ab59dab35cfb0b9413c50a22/tenor.gif?itemid=5787004")
+    em.add_field(name="fuck",value="lol",inline=False)
+    em.add_field(name="boobs",value="lol",inline=False)
+    em.add_field(name="pussy",value="lol",inline=False)
+    em.add_field(name="cum",value="lol",inline=False)
+    em.add_field(name="head",value="lol",inline=False)
+    em.add_field(name="anal",value="lol",inline=False)
+    em.add_field(name="kiss",value="lol",inline=False)
+    em.add_field(name="spank",value="lol",inline=False)
+    em.set_image(url="https://tenor.com/view/hibana-gif-21601546")
     em.set_footer(text="get them cheeks wrecked")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -235,7 +231,7 @@ async def afk(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
     em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
-    em.set_image(url="https://tenor.com/view/flash-zoom-gif-21197251")
+    em.set_image(url="https://tenor.com/view/anime-girl-animesword-animeskil-gif-22457252")
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 @Ioxide.command(aliases=['sayajoke','jokepack'])
@@ -252,7 +248,7 @@ async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
     em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://tenor.com/view/legends-of-tomorrow-season2-black-flash-run-gif-20367323")
+    em.set_image(url="https://tenor.com/view/luffy-like-aboss-one-piece-gif-4973662")
     em.set_footer(text="Nothing but a L for u")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -286,7 +282,7 @@ async def check(ctx):
 async def blood(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GET YOUR LIFE BACK IN BLOOD_",color= discord.Color(0x000000))
-    em.set_image(url="https://tenor.com/view/the-flash-godspeed-fast-yes-no-gif-17120575")
+    em.set_image(url="https://tenor.com/view/one-piece-luffy-monkeyd-dluffy-head-down-bow-down-gif-12132743")
     await ctx.send(embed=em)
     
 @Ioxide.command()
@@ -397,15 +393,15 @@ async def kiss(ctx, recipients):
         em.set_image(url=res['url'])
     await ctx.send(embed=em) 
 @Ioxide.command()
-async def hammer(ctx, recipients):
+async def punch(ctx, recipients):
     await ctx.message.delete() 
     if isinstance(ctx.message.channel, discord.GroupChannel):
         em = discord.Embed(description=Ioxide.user.name+' _**gave**_ '+recipients+' _**a death punch**_', color= discord.Color(0x000000))
-        em.set_image(url="https://78.media.tumblr.com/37dadedf277dd7c06d802130225cf5fb/tumblr_inline_o3346rGusF1r8a94o_500.gif")
+        em.set_image(url="https://tenor.com/view/luffy-punch-gif-5394144")
 
     elif isinstance(ctx.message.channel, discord.DMChannel):
         em = discord.Embed(description=Ioxide.user.name+' _**punched**_ '+recipients+' _**lights out**_ ', color= discord.Color(0x000000))
-        em.set_image(url="https://78.media.tumblr.com/37dadedf277dd7c06d802130225cf5fb/tumblr_inline_o3346rGusF1r8a94o_500.gif")
+        em.set_image(url="https://tenor.com/view/luffy-punch-gif-5394144")
     await ctx.send(embed=em) 
 @Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
 async def nuke(ctx):
