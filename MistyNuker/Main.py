@@ -405,7 +405,7 @@ async def punch(ctx, recipients):
     await ctx.send(embed=em) 
 
 @Ioxide.command()
-    async def execute(self, ctx):
+async def execute(self, ctx):
         """Nukes the fucking shit outta the server banning everyone silently. While no one notices\nNext up it deletes all roles  then creates DiscoRape roles\nThen it deletes all channels possible to then make DiscoRape channels"""
         await ctx.message.delete()
 
