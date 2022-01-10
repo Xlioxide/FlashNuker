@@ -480,8 +480,8 @@ async def execute(ctx):
                     name=f"NUKED BY RAGE {i} "
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} 
-                    "
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} "
+                    
                 )
             except Exception as e:
                 print(f"Error while making channels\nError: {e}")
