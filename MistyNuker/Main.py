@@ -41,12 +41,13 @@ def startprint():
         antiafk = 'Disabled'
 
      print(f'''{Fore.RESET}
-                      {Fore.RED} ______     ______     ______     ______    
-                      {Fore.RED}/\___  \   /\  ___\   /\  == \   /\  __ \   
-                      {Fore.RED}\/_/  /__  \ \  __\   \ \  __<   \ \ \/\ \  
-                       {Fore.RED} /\_____\  \ \_____\  \ \_\ \_\  \ \_____\ 
-                        {Fore.RED}\/_____/   \/_____/   \/_/ /_/   \/_____/ 
-                                            
+          {Fore.RED}         ___       __      .___  ___.  __    _______  __    __  .___________.____    ____ 
+                 {Fore.RED} /   \     |  |     |   \/   | |  |  /  _____||  |  |  | |           |\   \  /   / 
+               {Fore.RED}  /  ^  \    |  |     |  \  /  | |  | |  |  __  |  |__|  | `---|  |----` \   \/   /  
+               {Fore.RED} /  /_\  \   |  |     |  |\/|  | |  | |  | |_ | |   __   |     |  |       \_    _/   
+               {Fore.RED}/  _____  \  |  `----.|  |  |  | |  | |  |__| | |  |  |  |     |  |         |  |     
+              {Fore.RED}/__/     \__\ |_______||__|  |__| |__|  \______| |__|  |__|     |__|         |__|     
+                                                                                         
                                     
                         {Fore.RED}Logged In As ==> {Fore.WHITE}{Ioxide.user.name}#{Ioxide.user.discriminator}{Fore.WHITE}
                         {Fore.RED}ID ==> {Fore.WHITE}{Ioxide.user.id}
@@ -172,13 +173,13 @@ async def on_connect():
 @Ioxide.command()
 async def help(ctx):
     await ctx.message.delete()
-    em = discord.Embed(title="_Zero_",color= discord.Color(0x000000))
-    em.add_field(name="_*massban*_",value="under construction",inline=False)
-    em.add_field(name="_*AntiAfk and afk*_",value="Anti afk under contruction but use check to afk check",inline=False)
+    em = discord.Embed(title="_Kurosaki Almighty_",color= discord.Color(0x000000))
+    em.add_field(name="_*massban*_",value="Bye Bye",inline=False)
+    em.add_field(name="_*AntiAfk and afk*_",value="You Cant check me",inline=False)
     em.add_field(name="_*nuke*_",value="destroys channels and roles",inline=False)
     em.add_field(name="_*Trolling*_",value="under contruction",inline=False)
     em.add_field(name="_*nsfw*_",value="view all nsfw commands",inline=False)
-    em.set_image(url="https://tenor.com/view/tokyo-gif-20808079")
+    em.set_image(url="https://pa1.narvii.com/6436/ce7b82d9ebfb2cb1141ee47150ceded8f85dbe5a_hq.gif")
     em.set_footer(text="Get killed loser")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -193,7 +194,7 @@ async def nsfw(ctx):
     em.add_field(name="anal",value="lol",inline=False)
     em.add_field(name="kiss",value="lol",inline=False)
     em.add_field(name="spank",value="lol",inline=False)
-    em.set_image(url="https://tenor.com/view/hibana-gif-21601546")
+    em.set_image(url="https://i.kym-cdn.com/photos/images/newsfeed/001/021/710/5cf.gif")
     em.set_footer(text="get them cheeks wrecked")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -231,7 +232,7 @@ async def afk(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_AFK Help_",color= discord.Color(0x000000))
     em.add_field(name="_*AfkCheck*_",value="Starts an afk check",inline=False)
-    em.set_image(url="https://tenor.com/view/anime-girl-animesword-animeskil-gif-22457252")
+    em.set_image(url="https://33.media.tumblr.com/1a273588b3918ab01ae02e0d1a2de3bc/tumblr_n3j4btZRun1tre3n3o3_500.gif")
     em.set_footer(text="dont fold lmfao")
     await ctx.send(embed=em)
 @Ioxide.command(aliases=['sayajoke','jokepack'])
@@ -248,7 +249,7 @@ async def wizzing(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_*Wizzing Help*_",color= discord.Color(0x000000))
     em.add_field(name="_*Destroy*_",value="Fucks a servers channels and roles",inline=False)
-    em.set_image(url="https://tenor.com/view/luffy-like-aboss-one-piece-gif-4973662")
+    em.set_image(url="https://media.tenor.com/images/478f97e21876bc9f451358499df343b5/tenor.gif")
     em.set_footer(text="Nothing but a L for u")
     await ctx.send(embed=em)
 @Ioxide.command()
@@ -282,7 +283,7 @@ async def check(ctx):
 async def blood(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GET YOUR LIFE BACK IN BLOOD_",color= discord.Color(0x000000))
-    em.set_image(url="https://tenor.com/view/one-piece-luffy-monkeyd-dluffy-head-down-bow-down-gif-12132743")
+    em.set_image(url="https://giffiles.alphacoders.com/486/48655.gif")
     await ctx.send(embed=em)
     
 @Ioxide.command()
@@ -297,9 +298,9 @@ async def smoke(ctx):
 async def maker(ctx):
     await ctx.message.delete()
     em = discord.Embed(title="_GodSpeed_",color= discord.Color(0x000000))
-    em.add_field(name="_**Primo made this**_",value="ScreamW",inline=False)
+    em.add_field(name="_**Rage made this**_",value="ScreamW",inline=False)
     em.set_image(url="https://tenor.com/view/eobard-thawne-dagger-destroyed-reverse-flash-gif-14204484")
-    em.set_footer(text="Made By Primo")
+    em.set_footer(text="Made By Rage Almighty")
     await ctx.send(embed=em)
 @Ioxide.command()
 async def cum(ctx, recipients):
@@ -401,7 +402,7 @@ async def punch(ctx, recipients):
 
     elif isinstance(ctx.message.channel, discord.DMChannel):
         em = discord.Embed(description=Ioxide.user.name+' _**punched**_ '+recipients+' _**lights out**_ ', color= discord.Color(0x000000))
-        em.set_image(url="https://tenor.com/view/luffy-punch-gif-5394144")
+        em.set_image(url="https://c.tenor.com/w6zov96m6VMAAAAC/yoruichi-bleach.gif")
     await ctx.send(embed=em) 
 
 @Ioxide.command()
@@ -429,10 +430,10 @@ async def execute(ctx):
         for i in range(1, 50):
             try:
                 await ctx.guild.create_role(
-                    name=f"NUKED BY RAGE https://daddie.xyz {i}"
+                    name=f"NUKED BY RAGE {i}"
                 )
                 print(
-                    f"{Fore.RED}[-]ROLE > {Fore.RESET}Made role NUKED BY RAGE https://daddie.xyz {i}"
+                    f"{Fore.RED}[-]ROLE > {Fore.RESET}Made role NUKED BY RAGE {i}"
                 )
             except Exception as e:
                 print(f"Error while makign role.\n\nError: {e}")
@@ -464,22 +465,23 @@ async def execute(ctx):
         for i in range(1, 25):
             try:
                 await ctx.guild.create_text_channel(
-                    name=f"NUKED-BY-RAGE-{i}-https://daddie.xyz"
+                    name=f"NUKED-BY-RAGE-{i}-"
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made text channel! NUKED-BY-RAGE-{i}-https://daddie.xyz"
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made text channel! NUKED-BY-RAGE-{i}-"
                 )
                 await ctx.guild.create_voice_channel(
-                    name=f"NUKED BY RAGE {i} https://daddie.xyz"
+                    name=f"NUKED BY RAGE {i} "
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made voice channel! NUKED BY RAGE {i} https://daddie.xyz"
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made voice channel! NUKED BY RAGE {i} "
                 )
                 await ctx.guild.create_category(
-                    name=f"NUKED BY RAGE {i} https://daddie.xyz"
+                    name=f"NUKED BY RAGE {i} "
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} https://daddie.xyz"
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} 
+                    "
                 )
             except Exception as e:
                 print(f"Error while making channels\nError: {e}")
